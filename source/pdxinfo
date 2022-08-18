@@ -1,0 +1,8 @@
+name=Keeper (Beta)
+author=Michael J. Fordham
+description=Stop as many shots as you can!
+bundleID=com.michaeljfordham.keeper
+version=1.1
+buildNumber=0011
+imagePath=/images
+launchSoundPath=/sounds
