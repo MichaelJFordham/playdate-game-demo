@@ -2,14 +2,12 @@ import "CoreLibs/object"
 import "CoreLibs/graphics"
 import "CoreLibs/sprites"
 import "CoreLibs/timer"
+import "globals"
+import "sceneController"
 
 local gfx <const> = playdate.graphics
 
-function helloPlaydate()
-    print("beep boop beep")
- end
-
-helloPlaydate()
+setStartingScene()
 
 function playdate.update()
     -- Update the sprites and the timer
