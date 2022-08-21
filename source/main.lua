@@ -4,6 +4,7 @@ import "CoreLibs/sprites"
 import "CoreLibs/timer"
 import "globals"
 import "sceneController"
+import "playGameButton"
 
 local gfx <const> = playdate.graphics
 

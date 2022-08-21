@@ -27,6 +27,7 @@ function setStartingScene()
     gameState = 'start'
     clearSprites()
 
+    PlayGameButton(200, 200)
     setBackground('startingBackground')
 end
 
@@ -42,5 +43,7 @@ end
 function setGameOverScene()
     gameState = 'game over'
     clearSprites()
+
+    PlayGameButton(200, 200)
     setBackground('endingBackground')
 end
