@@ -36,6 +36,7 @@ function setGameScene()
     gameState = 'game'
     clearSprites()
 
+    Player(200, 180)
     setBackground('background')
 end
 
