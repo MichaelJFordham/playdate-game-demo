@@ -3,6 +3,7 @@ local gfx <const> = pd.graphics
 
 class('Player').extends(gfx.sprite)
 
+-- Instantiates the Player
 function Player:init(x, y)
     local playerImage = gfx.image.new("images/playerImage")
     assert( playerImage )
@@ -14,6 +15,7 @@ function Player:init(x, y)
     self.speed = 4
 end
 
+-- Runs every time the playdate refreshes, constantly checking if a button is being presssed (multiple can be pressed at once)
 function Player:update()
     -- Allow player movement with the D-pad
     if playdate.buttonIsPressed( playdate.kButtonUp ) then
