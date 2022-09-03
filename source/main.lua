@@ -6,6 +6,7 @@ import "globals"
 import "sceneController"
 import "playGameButton"
 import "player"
+import "ballSpawner"
 
 local gfx <const> = playdate.graphics
 

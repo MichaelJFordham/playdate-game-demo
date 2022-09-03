@@ -37,6 +37,7 @@ function setGameScene()
     clearSprites()
 
     Player(200, 180)
+    startBallSpawner()
     setBackground('background')
 end
 
@@ -45,6 +46,7 @@ function setGameOverScene()
     gameState = 'game over'
     clearSprites()
 
+    stopBallSpawner()
     PlayGameButton(200, 200)
     setBackground('endingBackground')
 end
