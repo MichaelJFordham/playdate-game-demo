@@ -26,6 +26,12 @@ function Ball:update()
             if collidedObject:isa(Player) then
                 self:remove()
             end
+
+            -- If we concede a goal, the game is over
+            if collidedObject:isa(Goal) then
+                setGameOverScene()
+                self:remove()
+            end
         end
     end
 

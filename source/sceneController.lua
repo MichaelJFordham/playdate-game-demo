@@ -37,6 +37,7 @@ function setGameScene()
     clearSprites()
 
     Player(200, 180)
+    Goal(200, 235)
     startBallSpawner()
     setBackground('background')
 end
