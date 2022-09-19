@@ -36,9 +36,9 @@ function setGameScene()
     gameState = 'game'
     clearSprites()
 
+    createScoreDisplay()
     Player(200, 180)
     Goal(200, 235)
-    startBallSpawner()
     setBackground('background')
 end
 

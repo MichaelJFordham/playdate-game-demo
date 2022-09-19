@@ -8,8 +8,16 @@ import "playGameButton"
 import "player"
 import "ballSpawner"
 import "goal"
+import "scoreDisplay"
 
 local gfx <const> = playdate.graphics
+
+function resetGame()
+    resetScore()
+    clearBalls()
+    stopBallSpawner()
+    startBallSpawner()
+end
 
 setStartingScene()
 

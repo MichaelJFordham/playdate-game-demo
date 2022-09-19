@@ -24,6 +24,8 @@ function Ball:update()
             local collidedObject = collision['other']
 
             if collidedObject:isa(Player) then
+                -- If we save a shot, the score is incremented by 1
+                incrementScore()
                 self:remove()
             end
 

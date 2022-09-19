@@ -1,4 +1,4 @@
--- Global gamestate variable which indicates what stage the user is at (start, game, game over)
+score = 0
 gameState = 'start'
 keeperSpeedMultiplier = 1
 ballSpeedMultiplier = 1

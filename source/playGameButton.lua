@@ -15,5 +15,6 @@ end
 function playdate.AButtonUp()
     if gameState == 'start' or gameState == 'game over' then
         setGameScene()
+        resetGame()
     end
 end
