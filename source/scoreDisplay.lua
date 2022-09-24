@@ -65,7 +65,7 @@ end
 
 function incrementScore()
     -- Updates the score
-    score += 1
+    score += 1  * pointsMultiplier
     updateDisplay()
 end
 
