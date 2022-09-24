@@ -13,6 +13,7 @@ import "scoreDisplay"
 local gfx <const> = playdate.graphics
 
 function resetGame()
+    loadHighscore()
     resetScore()
     clearBalls()
     stopBallSpawner()
