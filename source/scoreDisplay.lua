@@ -5,6 +5,7 @@ local scoreSprite
 local highscoreSprite
 local highscore
 local scoreTable
+local finalScoreSprite
 
 -- If there is a highscore stored, it loads it to the game, otherwise it initialises it to zero
 function loadHighscore()
@@ -61,6 +62,22 @@ function updateDisplay()
         gfx.drawText(highscoreText, 0, 0)
     gfx.popContext()
     highscoreSprite:setImage(highscoreImage)
+end
+
+function showFinalScore()
+    -- Final score sprite
+    finalScoreSprite = gfx.sprite.new()
+    finalScoreSprite:setCenter(0, 0)
+    finalScoreSprite:moveTo(190, 110)
+    finalScoreSprite:add()
+    local finalScoreText = score
+    local finalScoreTextWidth, finalScoreTextHeight = gfx.getTextSize(finalScoreText)
+    local finalScoreImage = gfx.image.new(finalScoreTextWidth, finalScoreTextHeight)
+    gfx.pushContext(finalScoreImage)
+        -- Wrapping the text with asterisks makes the text bold
+        gfx.drawText('*' .. finalScoreText .. '*', 0, 0)
+    gfx.popContext()
+    finalScoreSprite:setImage(finalScoreImage)
 end
 
 function incrementScore()

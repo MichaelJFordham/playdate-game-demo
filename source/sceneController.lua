@@ -46,8 +46,9 @@ end
 function setGameOverScene()
     gameState = 'game over'
     clearSprites()
-
     stopBallSpawner()
     PlayGameButton(200, 200)
+    showFinalScore()
+
     setBackground('endingBackground')
 end
