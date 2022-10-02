@@ -26,7 +26,6 @@ end
 function setStartingScene()
     gameState = 'start'
     clearSprites()
-
     PlayGameButton(200, 200)
     setBackground('startingBackground')
 end
@@ -35,15 +34,20 @@ end
 function setGameScene()
     gameState = 'game'
     clearSprites()
-
+    createScoreDisplay()
+    Player(200, 180)
+    Goal(200, 235)
+    playBackgroundMusic()
     setBackground('background')
 end
 
 -- Sets up the game over scene
 function setGameOverScene()
     gameState = 'game over'
+    stopMusic()
     clearSprites()
-
+    stopBallSpawner()
     PlayGameButton(200, 200)
+    showFinalScore()
     setBackground('endingBackground')
 end

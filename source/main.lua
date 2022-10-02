@@ -5,8 +5,25 @@ import "CoreLibs/timer"
 import "globals"
 import "sceneController"
 import "playGameButton"
+import "player"
+import "ballSpawner"
+import "goal"
+import "scoreDisplay"
+import "powerUpSpawner"
+import "soundController"
 
 local gfx <const> = playdate.graphics
+
+function resetGame()
+    loadHighscore()
+    resetScore()
+    clearBalls()
+    clearPowerUps()
+    stopBallSpawner()
+    stopPowerUpSpawner()
+    startBallSpawner()
+    startPowerUpSpawner()
+end
 
 setStartingScene()
 
