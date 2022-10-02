@@ -10,6 +10,7 @@ import "ballSpawner"
 import "goal"
 import "scoreDisplay"
 import "powerUpSpawner"
+import "soundController"
 
 local gfx <const> = playdate.graphics
 

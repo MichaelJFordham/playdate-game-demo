@@ -39,14 +39,23 @@ end
 -- Changes a global powerup to impact the gameplay
 function activatePowerUp(type)
     if (type == 'all') then
+        -- Increase the music rate
+        increaseMusicRate(0.8)
+
         -- Activate all powerups
         keeperSpeedMultiplier = 2
         ballSpeedMultiplier = 0.5
         pointsMultiplier = 2
     elseif (type == 'slow ball') then
+        -- Decreases the music rate
+        halveMusicRate()
+
         -- Makes the balls slower
         ballSpeedMultiplier = 0.5
     elseif (type == 'fast keeper') then
+        -- Increases the music rate
+        increaseMusicRate(0.8)
+
         -- Makes the keeper faster
         keeperSpeedMultiplier = 2
     elseif (type == 'double points') then

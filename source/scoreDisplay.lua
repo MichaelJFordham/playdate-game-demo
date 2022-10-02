@@ -82,8 +82,11 @@ end
 
 function incrementScore()
     -- Updates the score
-    score += 1  * pointsMultiplier
+    score += 1 * pointsMultiplier
     updateDisplay()
+
+    -- Increases the speed of the music
+    increaseMusicRate(0.005)
 end
 
 function resetScore()

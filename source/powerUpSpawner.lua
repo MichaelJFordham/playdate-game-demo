@@ -31,6 +31,7 @@ function spawnPowerUp()
     -- Resets and removes any powerups currently impacting gameplay to incentivise the player getting the new one
     clearPowerUps()
     resetPowerUps()
+    resetMusicRate()
 
     -- Spawns a random powerup at a random position on screen
     if (spawnType == 1) then
