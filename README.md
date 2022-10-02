@@ -10,4 +10,4 @@ Part 2 (creating a moveable player, randomly spawning footballs and a goal to pr
 
 Part 3 (displaying and storing a highscore, and adding special power-ups to the game): https://michaeljfordham.medium.com/how-to-build-a-game-for-the-playdate-console-part-three-2bda41bf1143
 
-Part 4 (displaying your final score on the game-over scene, playing background music during the game, and changing the rate of the music based on actions in-game): Currently being written...
+Part 4 (displaying your final score on the game-over scene, playing background music during the game, and changing the rate of the music based on actions in-game): https://michaeljfordham.medium.com/how-to-build-a-game-for-the-playdate-console-part-four-e610ad9f485b
