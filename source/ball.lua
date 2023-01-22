@@ -31,6 +31,7 @@ function Ball:update()
 
             -- If we concede a goal, the game is over
             if collidedObject:isa(Goal) then
+                saveScore(getScore())
                 setGameOverScene()
                 self:remove()
             end
