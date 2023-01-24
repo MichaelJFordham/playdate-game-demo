@@ -83,6 +83,12 @@ end
 function incrementScore()
     -- Updates the score
     score += 1 * pointsMultiplier
+    
+    -- Update highscore if current score is a new highscore
+    if score > highscore then
+        highscore = score
+    end
+    
     updateDisplay()
 
     -- Increases the speed of the music
